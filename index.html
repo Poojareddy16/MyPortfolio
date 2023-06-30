@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/ec713be8ff.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="container">
+    <nav>
+       <b>MyPortfolio</b>
+        <ul id="sidemenu">
+             <li><a href="#section1">Home</a></li>
+             <li><a href="#section2">About Me</a></li>
+             <li><a href="#section3">Skills</a></li>
+             <li><a href="#section4">Projects</a></li>
+             <li><a href="#contact">Contact Me</a></li>
+             <i class="fas fa-times" onclick="closemenu()"></i>
+           </ul>
+           <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav></div>
+    <main>
+        <div id="section1">
+            <div class="leftsection">Hi,My name is <span class="purple">Pooja</span>
+                <div>I am a passionate Full Stack Developer</div>
+                <button class="btn" onclick="window.location.href='MyResume.pdf'" style="height: 30px; width: 150px; background-color: rgb(194, 212, 231); font-size: 1rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); cursor:pointer; transition: transform 0.3s ease; border-radius: 5px;"><b>My Resume</b></button> 
+            </div>
+            <div class="rightsection">
+                <img src="about.jpg" alt="Myself">
+            </div>
+
+        </div><br>
+        <hr>
+       <div id="section2">
+        <div class="containers"><div class="title">About Me</div>
+            <div class="row">
+                <div class="container-col-1"><img src="me.jpeg" alt=""></div>
+                <div class="container-col-2">
+                    <h1 class="sub-title" style="font-size: 45px; ">About Me</h1>
+                    <p style="color: rgb(42, 41, 41); font-size: 1.6rem;">A creative and quick thinking individual with a bent towards communicating and building a relationship online. Well versed with Web Development tools and strategies. Skilled at MERN Full Stack methodologies.</p>
+                    <p style="color: rgb(42, 41, 41); font-size: 1.6rem;">I am seeking opportunities to join a company that can help me in enhancing my skills, strengthening my knowledge, and realising my potential. I am willing to explore a wide variety of opportunities that can help me gain perspective.</p>
+                </div>
+            </div>
+        </div>
+    </div><hr>
+    <div id="section3">
+        <h1 class="sub-title" style="font-size: 50px; ">Skills</h1><br>
+        <div class="myskills">
+            <div class="skill">
+            <img src="html.png" alt="html5">
+        </div>
+        <div class="skill">
+            <img src="css.png" alt="html5">
+        </div>
+        <div class="skill">
+            <img src="java-script.png" alt="html5">
+        </div>
+        <div class="skill">
+            <img src="bootstrap.png" alt="html5">
+        </div>
+    </div>
+</div><hr>
+    <div id="section4">
+        <h1 class="sub-title" style="font-size: 45px; padding-left: 100px;">My Projects</h1>
+        <div class="work-list">
+            <div class="works">
+                <img src="travel.png" alt="">
+                <div class="layer">
+                    <h3 style="font-size: 28px;">Travel Blog</h3>
+                    <p>This is a simple travel blog website creayed by using html5, css and javascript</p>
+                    <a href="https://poojareddy16.github.io/Travel-blog/"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="works">
+                <img src="fundraiser.png" alt="">
+                <div class="layer">
+                    <h3 style="font-size: 28px;">Fundraiser Website</h3>
+                    <p>This is a non-profitable fundraiser website created using html5 and css</p>
+                    <a href="https://poojareddy16.github.io/Non-profit-Fundraising/"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            
+            <div class="works">
+                <img src="gallery.png" alt="">
+                <div class="layer">
+                    <h3 style="font-size: 28px;">My Image Gallery</h3>
+                    <p>This is My image gallery website that showcases few images created using html5 and css</p>
+                    <a href="https://poojareddy16.github.io/Image-gallery/"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer><div id="contact">
+        <h1>Contact Me</h1>
+        <a href="/"><i class="fa fa-envelope">  poojareddyy1601@gmail.com</i></a><br>
+        <a href="#"><i class="fa fa-phone">  7993267642</i></a><br>
+        <a href="https://www.linkedin.com/in/pooja-reddy16/"><i class="fa fa-linkedin-square">  Linkedin</i></a><br>
+        <a href="https://github.com/Poojareddy16"><i class="fa fa-github">  GitHub</i></a><br>
+    </div>
+    <center><div class="footer2" style="background-image: linear-gradient(to right, rgb(13, 44, 56) , rgb(61, 25, 75));font-size: 13px;">
+        <p><i class="fa fa-copyright"></i>2023 Pooja's Portfolio | All rights reserved</p>
+    </div></center>
+
+</footer>
+    </main>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-250px";
+            
+        }
+    </script>    
+</body>
+</html>
